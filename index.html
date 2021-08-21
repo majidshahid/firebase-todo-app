@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="text" placeholder="Enter todo">
+        <button onclick="addtodo()" class="btn">Add Todo</button>
+        <button onclick="delet()" class="btn">Delete All</button>
+        <div class="list">
+        <ul id="list" style="list-style-type: none;">
+            
+        </ul>
+    </div>
+    </div>
+ 
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAnL46e79LfAhhX78kaQJlja9wO5KwKIN0",
+    authDomain: "majidshahidweb.firebaseapp.com",
+    databaseURL: "https://majidshahidweb.firebaseio.com",
+    projectId: "majidshahidweb",
+    storageBucket: "majidshahidweb.appspot.com",
+    messagingSenderId: "315843781814",
+    appId: "1:315843781814:web:64dcec3a441a521a6a7217",
+    measurementId: "G-0SNPL4VCDX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="app.js"></script>
+</body>
+</html>
